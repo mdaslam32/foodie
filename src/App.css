@@ -1,0 +1,107 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  background-color: transparent;
+  width: 95%;
+  margin: 2px 5px;
+}
+
+.mapui {
+  width: 100%;
+  height: auto;
+}
+
+.body {
+  position: relative;
+  display: flex;
+}
+
+.sbtn {
+  background-color: #ffffff;
+  color: #000;
+  font-size: x-large;
+  border: 2px solid black;
+  box-shadow: 10px 10px rgb(255, 255, 255);
+}
+
+.iphone {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 250px;
+  height: 480px;
+}
+
+.text {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px rgb(0, 0, 0, 0.7);
+}
+
+.join,
+.thank {
+  color: orangered;
+  font-weight: bolder;
+}
+
+.btnjoin {
+  width: 100%;
+  margin-left: 106%;
+}
+
+footer {
+  background-color: rgb(255, 205, 205);
+}
+
+@media screen and (max-width: 1024px) {
+  .iphone {
+    left: 150px;
+    width: 200px;
+    height: 400px;
+  }
+
+  .text {
+    left: 400px;
+    font-size: 10px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .iphone {
+    left: 100px;
+    width: 180px;
+    height: 330px;
+  }
+  .text {
+    left: 300px;
+    font-size: 2px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .iphone {
+    left: 80px;
+    width: 130px;
+    height: 220px;
+  }
+  .text {
+    left: 200px;
+    font-size: 2px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .iphone {
+    left: 50px;
+    width: 80px;
+    height: 150px;
+  }
+  .text {
+    left: 150px;
+    font-size: 2px;
+  }
+}
