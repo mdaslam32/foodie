@@ -1,12 +1,12 @@
 import "./App.css";
-import MapUI from "./assets/MapUI.png";
 import Foodie from "./assets/Foodie.png";
-import iphoneLayout from "./assets/iphoneLayout.png";
+import iphoneLayout from "./assets/iphoneLayout.mp4";
 import { useState } from "react";
 const App = () => {
   const [thank, setThank] = useState("");
   return (
     <div className="container-fluid">
+      {/* Header Start */}
       <header>
         <img
           src={Foodie}
@@ -21,42 +21,36 @@ const App = () => {
           Join the waitlist
         </button>
       </header>
+      {/* Header End */}
+
+      {/* Section Start */}
       <section className="body">
-        <img
-          src={MapUI}
-          alt="MapUI"
-          className="mapui img-fluid rounded mx-auto d-block"
-        />
-        <div className="row">
-          <div className="col sm-2">
-            <img
-              src={iphoneLayout}
-              alt="iPhone Layout"
-              className="img-fluid iphone"
-            />
-            <div className="text">
-              <img
-                src={Foodie}
-                alt="Foodie Logo"
-                width={"100px"}
-                className="img-fluid"
-              />
-              <h1 className="mt-3">Welcome to Foodie</h1>
-              <p className="para fs-3">
-                At foodie, we redefine convenience with our seamless food
-                delivery service. Whether you're craving the flavors of home or
-                exploring new culinary delights, foodie brings it all to your
-                doorstep. From hearty breakfasts to gourmet dinners and
-                everything in between, our curated menu caters to every palate
-                and preference.
-              </p>
-              <button className="sbtn btn badge rounded-pill">
-                Join the waitlist
-              </button>
-            </div>
-          </div>
+        <div>
+          <video src={iphoneLayout} autoPlay loop muted />
+        </div>
+        <div className="text">
+          <img
+            src={Foodie}
+            alt="Foodie Logo"
+            width={"100px"}
+            className="img-fluid"
+          />
+          <h1 className="mt-3">Welcome to Foodie</h1>
+          <p className="para fs-5">
+            At foodie, we redefine convenience with our seamless food delivery
+            service. Whether you're craving the flavors of home or exploring new
+            culinary delights, foodie brings it all to your doorstep. From
+            hearty breakfasts to gourmet dinners and everything in between, our
+            curated menu caters to every palate and preference.
+          </p>
+          <button className="btn2 btn badge rounded-pill">
+            Join the waitlist
+          </button>
         </div>
       </section>
+      {/* Section End */}
+
+      {/* Footer Start */}
       <footer>
         <h1 className="join text-center mt-5 mb-5">Join the waitlist</h1>
         <form className="p-2">
@@ -111,6 +105,7 @@ const App = () => {
           &copy; Foodie, 2024
         </p>
       </footer>
+      {/* Footer End */}
     </div>
   );
 };
